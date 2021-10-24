@@ -1,0 +1,1 @@
+# Przelicznik_Walut_JS_1
