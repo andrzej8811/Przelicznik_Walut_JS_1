@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #777;
+  font-size: 20px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+ul ji {
+  cursor: pointer;
+}
+
+header,
+main,
+footer {
+  padding: 20px;
+}
+p {
+  padding: 10px;
+}
+
+#wrapper {
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+  word-spacing: 4px;
+  letter-spacing: 2px;
+  margin-right: 2px;
+}
