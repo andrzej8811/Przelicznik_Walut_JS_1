@@ -15,3 +15,6 @@ function Offer(isNew) {
 }
 
 export default Offer1;
+
+
+
