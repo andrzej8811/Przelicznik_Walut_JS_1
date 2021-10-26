@@ -117,7 +117,7 @@ h3 {
 }
 
 .our-specialists {
-  margin: auto;
+  margin: 0 30px;
   padding: 0;
   height: auto;
 }
@@ -126,32 +126,15 @@ h3 {
   background-color: #f1f1f1;
   width: 960px;
   height: 2000px;
-  display: flex;
-  padding: ;
-  flex-direction: row;
-  display: flex;
-  flex-direction: column;
   margin: 40px 20px;
 }
 .our-specialists h1 {
-  font-size: 25px;
-  text-align: center;
+  font-size: 45px;
   margin: 0;
   padding-top: 10px;
-  padding-left: 0;
+  padding-left: 30;
 }
 
-.our-specialists-text {
-  /* margin-bottom: 10px; */
-  padding-bottom: 10px;
-  text-align: center;
-  margin-left: 0%;
-}
-.our-specialists-text {
-  color: black;
-  margin-left: 10%;
-  font-weight: bold;
-}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -190,20 +173,20 @@ user agent stylesheet h1 {
   height: 200px;
   padding-left: 5px;
   border-radius: 50%;
-  background-color: #c4c4c4;
+  background-image: url(./Profil11.jpg);
   justify-content: center;
   align-items: center;
   margin-left: 2px;
   background-size: cover;
 }
 .you-circle {
-  display: fle;
+  display: flex;
   width: 200px;
   height: 200px;
   padding-left: 20px;
   padding-bottom: 40px;
   border-radius: 50%;
-  background-color: grey;
+  background-image: url(./Profil33.jpg);
   justify-content: center;
   align-items: center;
   margin-right: 40px;
@@ -215,37 +198,19 @@ user agent stylesheet h1 {
   display: flex;
   flex-direction: column;
   text-align: justify;
-  width: 100%;
+  width: 35em;
   padding: 0 10px;
   margin: 20px 50px;
 }
-.text-1 h3 {
-  text-align: left;
-}
-
-.text-1 h3 {
-  font-weight: bold;
-}
-
 .text-2 {
   display: flex;
   flex-direction: column;
+  width: 35em;
   text-align: justify;
   text-align: right;
-  margin: 20px 20px;
+  margin: 20px 50px;
 }
 
-.row-text {
-  padding: 0 10px;
-  margin: 20px 20px;
-}
-.row:nth-child(odd) {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  align-items: center;
-  justify-content: center;
-}
 .our-offer {
   background-color: #405d78;
   width: 960px;
@@ -253,6 +218,7 @@ user agent stylesheet h1 {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 .our-offer h1 {
   font-size: 25px;
@@ -296,8 +262,8 @@ user agent stylesheet h1 {
 
 .red-circle {
   position: relative;
-  left: -225px;
-  top: 50px;
+  left: -125px;
+  top: -85px;
   height: 20px;
   width: 20px;
   background-color: red;
