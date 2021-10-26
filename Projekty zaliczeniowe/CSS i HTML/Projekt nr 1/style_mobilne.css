@@ -1,0 +1,36 @@
+@media screen and (max-width: 500px) {
+  .nawigacja {
+    width: 100%;
+    padding: 10px;
+  }
+  .nawigacja li {
+    width: 100%;
+    display: none;
+    padding: 10px 0;
+  }
+
+  .my-circle {
+    position: relative;
+  }
+
+  .our-specjalist h1 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+  }
+  .our-specjalist {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+  .text-2 {
+    padding: 10px;
+    justify-content: left;
+    text-align: left;
+  }
+}
