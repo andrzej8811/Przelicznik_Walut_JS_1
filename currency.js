@@ -1,46 +1,42 @@
 const select = document.querySelectorAll(".currency");
 const btn = document.getElementById("btn");
-const input = document.getElementById("input");
-const result = document.getElementById("result");
+const num = document.getElementById("num");
+const ans = document.getElementById("ans");
 
-fetch("http://api.nbp.pl/api/exchangerates/tables")
-.then((data) => data.json())
-.then((data) => {
-  display(data);
-});
+fetch("https://api.frankfurter.app/currencies")
+  .then((data) => data.json())
+  .then((data) => {
+    display(data);
+  });
 
-function display(data){
+function display(data) {
   const entries = Object.entries(data);
-  for(var i = 0; i < entries.length; i++){
-    select[0].innerHTML += `<option value="${entries[i][0]}" >${entries[i][0]}`;
-    select[1].innerHTML += `<option value="${entries[i][0]}" >${entries[i][0]}`;
+  for (var i = 0; i < entries.length; i++) {
+    select[0].innerHTML += `<option value="${entries[i][0]}">${entries[i][0]}</option>`;
+    select[1].innerHTML += `<option value="${entries[i][0]}">${entries[i][0]}</option>`;
   }
 }
 
 btn.addEventListener("click", () => {
   let currency1 = select[0].value;
   let currency2 = select[1].value;
-  let value = input.value;
+  let value = num.value;
 
-  if(currency1 != currency2) {
+  if (currency1 != currency2) {
     convert(currency1, currency2, value);
-
-  }else{
+  } else {
     alert("Choose Different Currencies !!!");
   }
-
 });
 
 function convert(currency1, currency2, value) {
-  const host = "api.nbp.pl/api/exchangerates/tablest";
-  fetch{
+  const host = "api.frankfurter.app";
+  fetch(
     `https://${host}/latest?amount=${value}&from=${currency1}&to=${currency2}`
-  }
-
-  .then((val) => val.json())
-  .then((val) => {
-    console.log(Object.values(val.rates)[0]);
-    result.value = Object.values(val.rates)[0];
-  });
-
+  )
+    .then((val) => val.json())
+    .then((val) => {
+      console.log(Object.values(val.rates)[0]);
+      ans.value = Object.values(val.rates)[0];
+    });
 }
