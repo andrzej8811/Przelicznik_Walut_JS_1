@@ -3,7 +3,7 @@ const btn = document.getElementById("btn");
 const num = document.getElementById("num");
 const ans = document.getElementById("ans");
 
-fetch("https://api.frankfurter.app/currencies")
+fetch("http://api.nbp.pl/api/exchangerates/tables/a/")
   .then((data) => data.json())
   .then((data) => {
     display(data);
@@ -30,7 +30,7 @@ btn.addEventListener("click", () => {
 });
 
 function convert(currency1, currency2, value) {
-  const host = "api.frankfurter.app";
+  const host = "api.nbp.pl/api/exchangerates";
   fetch(
     `https://${host}/latest?amount=${value}&from=${currency1}&to=${currency2}`
   )
